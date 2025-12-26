@@ -1,0 +1,91 @@
+# ============================================================================
+# Build Outputs
+# ============================================================================
+build/
+bin/
+lib/
+*.o
+*.a
+*.so
+*.so.*
+*.bin
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+_deps/
+
+# Executables
+tcp_server
+unit_tests
+*.out
+
+# ============================================================================
+# Python
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+.venv/
+
+# ============================================================================
+# IDEs and Editors
+# ============================================================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Emacs
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# OS Specific
+# ============================================================================
+# Linux
+.directory
+*.core
+core
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows (even though not supported, for cross-platform repos)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+#Local env
+.env
+.local.env
