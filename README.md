@@ -62,12 +62,13 @@ Reactor (epoll event loop)
 **Flow Control:** Pauses reads when write buffer ≥ 64KB, resumes at ≤ 32KB.
 
 ## Design choices
-**Reactor pattern:** Efficiently utilizes non-blocking IO
-**Epoll:** Provides O(1) scalability
-**Edge-Triggered mode:** Minimize number of system calls
-**Eventfd:** Safely handles async signals
-**Avoiding multi-reactor:** Event loop per core is ideal, but adds confusion to this demo 
-**Avoiding worker thread pool:** Trivial business logic (converts input to uppercase)
+
+- **Reactor pattern:** Efficiently utilizes non-blocking IO
+- **Epoll:** Provides O(1) scalability
+- **Edge-Triggered mode:** Minimize number of system calls
+- **Eventfd:** Safely handles async signals
+- **Avoiding multi-reactor:** Event loop per core is ideal, but adds confusion to this demo 
+- **Avoiding worker thread pool:** Trivial business logic (converts input to uppercase)
 
 
 ## Known Limitations
